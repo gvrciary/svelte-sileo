@@ -30,7 +30,7 @@
 </script>
 
 	<main class="flex flex-col items-center pt-24 pb-8">
-		<h1 class="text-7xl sm:text-8xl font-semibold tracking-tighter text-balance">
+		<h1 class="text-5xl sm:text-7xl font-semibold tracking-tighter whitespace-nowrap">
 			Svelte-Sileo<span class="text-neutral-300">.</span>
 		</h1>
 		<p class="mt-3 text-sm font-medium text-neutral-300 text-center tracking-wide">
