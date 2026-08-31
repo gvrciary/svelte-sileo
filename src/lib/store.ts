@@ -178,6 +178,8 @@ export const sileo = {
     createToast({ ...opts, state: "warning" }).id,
   info: (opts: SileoOptions) => createToast({ ...opts, state: "info" }).id,
   action: (opts: SileoOptions) => createToast({ ...opts, state: "action" }).id,
+  loading: (opts: SileoOptions) =>
+    createToast({ duration: null, ...opts, state: "loading" }).id,
 
   promise: <T>(
     promise: Promise<T> | (() => Promise<T>),

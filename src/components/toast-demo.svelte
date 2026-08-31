@@ -62,6 +62,16 @@
 				}),
 		},
 		{
+			id: "loading",
+			label: "Loading",
+			action: () => {
+				const id = sileo.loading({ title: "Uploading..." });
+				setTimeout(() => {
+					sileo.success({ id, title: "Upload complete" });
+				}, 2000);
+			},
+		},
+		{
 			id: "icon",
 			label: "Icon",
 			action: () =>

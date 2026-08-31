@@ -101,6 +101,19 @@ sileo.action({
 });
 ```
 
+### `sileo.loading(opts)`
+
+Shows a persistent loading toast. Morph it into another state by passing its `id` to the next call.
+
+```ts
+const id = sileo.loading({ title: 'Uploading...' });
+
+// Later, morph to success (or error, warning, etc.)
+sileo.success({ id, title: 'Upload complete' });
+```
+
+`duration` defaults to `null` (persistent) so the toast stays visible until you transition or dismiss it manually.
+
 ### `sileo.promise(promise, opts)`
 
 Starts in a loading state and transitions to success or error automatically.
